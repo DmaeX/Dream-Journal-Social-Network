@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Dream Journal</title>
+    <link rel="stylesheet" href="static/style.css" />
+    <script src="static/main.js" defer></script>
+  </head>
+
+  <body>
+    <!-- <video autoplay muted loop id="myVideo">
+      <source src="static/starry_night_1.mp4" type="video/mp4">
+    </video> -->
+
+    <div class="container">
+      <h1>🌙 My Dream Journal</h1>
+      <form id="dreamForm">
+        <label for="title">Dream Title:</label>
+        <input type="text" id="title" name="title" required>
+  
+        <!--<label for="d">Date:</label>-->
+        <!--<input type="date" id="date" name="date" required>-->
+  
+        <label for="content">Describe Your Dream:</label>
+        <textarea id="content" name="content" rows="5" placeholder="What did you dream about?" required></textarea>
+  
+        <label for="mood">Add Memorable Tag(s):</label>
+
+        <div id="tagContainer">
+            <input type="text" id="mood" name="tags" placeholder="Enter tags separated by commas">
+        </div>
+
+
+       <!--<label for="mood">How did you feel?</label>
+        <select id="mood" name="mood">
+          <option value="happy">😊 Happy</option>
+          <option value="scared">😱 Scared</option>
+          <option value="sad">😢 Sad</option>
+          <option value="weird">🤔 Weird</option>
+        </select>-->
+  
+        <input type="submit" value="Save Dream">
+      </form>
+  
+    
+    <!-- 🌌 Section to show saved dreams -->
+    <h2>🪶 Your Saved Dreams</h2>
+    <div id="dreamList"></div>
+
+  </body>
+</html>
